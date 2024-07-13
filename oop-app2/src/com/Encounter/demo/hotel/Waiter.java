@@ -6,12 +6,6 @@ package com.Encounter.demo.hotel;
  */
 public class Waiter extends Employee implements Service
     {
-        @Override
-        public void vip()
-            {
-                System.out.println("嘘寒问暖");
-            }
-
         public Waiter()
             {
             }
@@ -19,5 +13,17 @@ public class Waiter extends Employee implements Service
         public Waiter(String name, int id)
             {
                 super(name, id);
+            }
+
+        @Override
+        public void vip()
+            {
+                System.out.println(getName()+"嘘寒问暖");
+            }
+
+        public void ordinaryService()
+            {
+                System.out.println("服务员上菜");
+                vip();
             }
     }

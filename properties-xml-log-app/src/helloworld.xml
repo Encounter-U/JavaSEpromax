@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--注释：以上抬头声明必须放在第一行，必须有-->
+<!--根标签只能有一个-->
+<users>
+    <user id="1">
+        <name>路明非</name>
+        <sex>男</sex>
+        <password>Dragon</password>
+        <data>3 &lt; 5 &amp;&amp; 5 > 3</data>
+        <data1>
+            <![CDATA[
+                3 < 5 && 5 > 3
+            ]]>
+        </data1>
+    </user>
+    <user id="2">
+        <name>楚子航</name>
+        <sex>男</sex>
+        <password>lineageA</password>
+        <data>3 &lt; 5 &amp;&amp; 5 > 3</data>
+    </user>
+    <people>很多人</people>
+</users>

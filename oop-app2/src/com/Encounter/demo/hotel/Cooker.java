@@ -18,6 +18,12 @@ public class Cooker extends Employee implements Service
         @Override
         public void vip()
             {
-                System.out.println("加菜");
+                System.out.println(getName()+"加菜");
+            }
+
+        public void ordinaryService()
+            {
+                System.out.println("厨师做饭");
+                vip();
             }
     }

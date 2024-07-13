@@ -1,0 +1,46 @@
+package com.Encounter.d5_arrays;
+
+/**
+ * @author Encounter
+ * @date 2024/6/22 10:01
+ */
+
+import java.util.Arrays;
+import java.util.Comparator;
+
+/**
+ * 掌握如何对数组中的对象排序
+ */
+public class ArraysTest2
+    {
+        public static void main(String[] args)
+            {
+                Student[] students = new Student[4];
+                students[0] = new Student("路明非", 175, 22);
+                students[1] = new Student("楚子航", 180, 23);
+                students[2] = new Student("凯撒", 180, 23);
+                students[3] = new Student("上杉绘梨衣", 171, 22);
+
+                //1.public static void sort(类型[] arr)：对数组进行排序
+                Arrays.sort(students);
+                System.out.println(Arrays.toString(students));
+
+                //2.public static <T> void sort(T[] arr,Comparator<? super T> c)
+                //参数一：需要排序的数组
+                //参数二：Comparator比较器对象（用来制定比较规则）
+                Arrays.sort(students, new Comparator<Student>()
+                    {
+                        @Override
+                        public int compare(Student o1, Student o2)
+                            {
+                                //制定比较规则
+                                //约定：左大于右，返回正整数
+                                //右大于左，返回负整数
+                                //相等，返回0
+                                return Double.compare(o1.getHeight(), o2.getHeight());//升序
+                                //return Double.compare(o2.getHeight(), o1.getHeight());//降序
+                            }
+                    });
+                System.out.println(Arrays.toString(students));
+            }
+    }

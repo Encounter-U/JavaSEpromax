@@ -17,11 +17,11 @@ public class Test
     {
         public static void main(String[] args)
             {
-                Employee employee = new Cooker();
-                ((Cooker)employee).vip();
-                Employee employee1 = new Waiter();
-                ((Waiter)employee1).vip();
-                Employee manager=new Manager("经理",18);
-                System.out.println(manager.getName());
+                Cooker cooker = new Cooker("路明非", 10);
+                cooker.ordinaryService();
+                Waiter waiter = new Waiter("楚子航", 12);
+                waiter.ordinaryService();
+                Manager manager = new Manager("凯撒", 18);
+                manager.ordinaryService();
             }
     }

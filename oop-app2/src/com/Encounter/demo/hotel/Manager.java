@@ -14,4 +14,9 @@ public class Manager extends Employee
             {
                 super(name, id);
             }
+
+        public void ordinaryService()
+            {
+                System.out.println("经理管理员工");
+            }
     }

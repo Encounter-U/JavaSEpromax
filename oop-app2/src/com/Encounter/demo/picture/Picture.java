@@ -48,9 +48,10 @@ public abstract class Picture
         //显示图形信息
         public final void show()
             {
-                System.out.println("边数："+sideCount);
-                System.out.println("边长："+sideLength);
+                System.out.println("边数：" + sideCount);
+                System.out.println("边长：" + sideLength);
                 showInfo();
             }
+
         public abstract void showInfo();
     }

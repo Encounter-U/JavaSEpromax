@@ -28,17 +28,17 @@ public class Test
                     }, 1, 2);
                 uc.useCom((n, m) ->
                     {
-                        System.out.println("m-n=" + (n-m));
+                        System.out.println("m-n=" + (n - m));
                         return n - m;
                     }, 1, 2);
                 uc.useCom((n, m) ->
                     {
-                        System.out.println("m*n=" + (n*m));
+                        System.out.println("m*n=" + (n * m));
                         return n * m;
                     }, 1, 2);
                 uc.useCom((n, m) ->
                     {
-                        System.out.println("m/n=" + (n/m));
+                        System.out.println("m/n=" + (n / m));
                         return n / m;
                     }, 2, 1);
             }
