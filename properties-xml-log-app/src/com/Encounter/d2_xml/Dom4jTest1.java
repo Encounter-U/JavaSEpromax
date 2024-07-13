@@ -48,5 +48,31 @@ public class Dom4jTest1
                 Attribute id = user.attribute("id");
                 System.out.println(id.getName());
                 System.out.println(id.getValue());
+
+                List<Attribute> attributes = user.attributes();
+                for (Attribute attribute : attributes)
+                    {
+                        System.out.println(attribute.getName() + "=" + attribute.getValue());
+                    }
+
+                //7.如何获取全部的文本内容：获取当前元素下的子元素文本值
+                List<Element> users = user.elements();
+                for (Element element : users)
+                    {
+                        System.out.println(element.getName());
+                        System.out.println(element.getText());
+                    }
+
+
+                System.out.println(user.elementText("name"));
+                System.out.println(user.elementText("sex"));
+                System.out.println(user.elementText("password"));
+                System.out.println(user.elementText("data1"));
+                System.out.println("====");
+                System.out.println(user.elementTextTrim("data1"));//取出文本，去除前后空格
+
+                Element name = user.element("data1");
+                System.out.println(name.getText());
+                System.out.println(name.getTextTrim());//取出文本，去除前后空格
             }
     }
