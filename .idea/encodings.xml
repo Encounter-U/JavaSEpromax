@@ -6,5 +6,6 @@
     <file url="file://$PROJECT_DIR$/file-io-app2/src/test6.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/file-io-app2/src/test_gbk.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/file-io-app2/src/test_gbk_out.txt" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
