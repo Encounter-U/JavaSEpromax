@@ -1,0 +1,9 @@
+==========Student==========
+name=路明非
+age=22
+sex=男
+height=179.0
+hobby=Dragon
+==========Teacher==========
+name=昂热
+salary=9999999.0
