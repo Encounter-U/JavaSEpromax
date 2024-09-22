@@ -13,6 +13,7 @@ public class Test2
                 Dog d=new Dog();
                 d.behavior();
                 Animal a=new Cat();
+                a.setName("猫");
                 a.behavior();
             }
     }
